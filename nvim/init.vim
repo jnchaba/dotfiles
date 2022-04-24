@@ -30,7 +30,6 @@ call plug#begin("~/.vim/plugged")
  Plug 'scrooloose/nerdtree'
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
  call plug#end()
  
 autocmd VimEnter * NERDTree
