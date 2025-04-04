@@ -118,6 +118,7 @@ export NVM_DIR="$HOME/.nvm"
 
 alias comfyup="cd ~/Developer/ComfyUI && python3 main.py"
 
+# Overrides ls and la with nicer lsd output
 if [ -x "$(command -v lsd)" ]; then
 	alias ls="lsd"
 	alias la="lsd -la"
@@ -128,5 +129,6 @@ if [ -x "$(command -v nvim)" ]; then
 	alias vi="nvim"
 fi
 
+# This has saved my bacon too many times
 alias bf='function _backup_file() { cp "$1" "$1.bak.$(date +%Y%m%d%H%M%S)"; }; _backup_file'
 
